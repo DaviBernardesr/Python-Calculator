@@ -16,6 +16,7 @@ from operacoes.operacoes import divis
 #Inicializando.
 num = 0
 
+#1° Operação
 while (num == 0):
 
     num1 = 0
@@ -34,7 +35,7 @@ while (num == 0):
 
     print("x = Sair\n")
 
-    operacao = input("Digite qual operação realizar:\n")
+    operacao = input("Escolha sua operação:\n")
 
     if (operacao == "+"):
         num1 = float(input("Digite um número:"))
@@ -66,3 +67,32 @@ while (num == 0):
         exit()
     else:
         print("Opção Inválida, Tente outra!!\n")
+
+
+    num = 1
+
+    #2° Operação
+    while ( num == 1):
+        print("--------------------------------------")
+        print("Escolha a operação a ser realizada: ")
+        print("+")
+        print("-")
+        print("*")
+        print("** (Potência)")
+        print("/ (Divisão)\n")
+
+        print(f"Visor: {result}")
+        print("X = Sair\n")
+
+        operacao = input("Escolha sua operação:\n")
+
+
+        if(operacao == "+"):
+            num3 = float(input("Digte um número:"))
+            result = adicao(result, num3)
+        elif(operacao == "-"):
+            num3 = float(input("Digite um número:"))
+            result = subtracao(result, num3)
+        elif(operacao == "*"):
+            num3 = float(input("Digite um número"))
+            result = multiply(result, num3)
