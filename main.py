@@ -62,17 +62,17 @@ while (num == 0):
         num2 = float(input("Digite outro número"))
         result = divis(num1, num2)
         print(f"{result}")
-    elif (operacao == "x"):
+    elif (operacao == "x" or "X"):
         print("Saindo da Calculadora...\n")
         exit()
     else:
         print("Opção Inválida, Tente outra!!\n")
 
 
-    num = 1
+    num2 = 1
 
     #2° Operação
-    while ( num == 1):
+    while ( num2 == 1):
         print("--------------------------------------")
         print("Escolha a operação a ser realizada: ")
         print("+")
@@ -88,11 +88,22 @@ while (num == 0):
 
 
         if(operacao == "+"):
-            num3 = float(input("Digte um número:"))
+            num3 = float(input("Digite um número:"))
             result = adicao(result, num3)
         elif(operacao == "-"):
             num3 = float(input("Digite um número:"))
             result = subtracao(result, num3)
         elif(operacao == "*"):
-            num3 = float(input("Digite um número"))
+            num3 = float(input("Digite um número:"))
             result = multiply(result, num3)
+        elif(operacao == "**"):
+            num3 = float(input("Digite uma base:"))
+            result = poten(result, num3)
+        elif(operacao == "/"):
+            num3 = float(input("Digite um número:"))
+            result = divis(result, num3)
+        elif(operacao == "x" or "X"):
+            print("Saindo da Calculadora...\n")
+            exit()
+        else:
+            print("Opção invalida, tente outra!!\n")
